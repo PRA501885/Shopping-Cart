@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing Store</title>
+  <!-- Link to external stylesheet for custom styles -->
+  <link rel="stylesheet" href="src/style.css">
+  <!-- Link to Bootstrap Icons for icons used in the page -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <!-- Navigation bar with links to home and cart pages -->
+  <div class="navbar">
+    <a href="index.html">
+      <h2>Clothing Store</h2>
+    </a>
+
+    <a href="cart.html">
+      <div class="cart">
+        <i class="bi bi-cart2"></i> <!-- Cart icon -->
+        <div id="cartAmount" class="cartAmount">0</div> <!-- Cart item count -->
+      </div>
+    </a>
+  </div>
+
+  <!-- Section for displaying shop items -->
+  <div class="shop" id="shop"></div>
+
+  <!-- Modal for displaying product details -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span> <!-- Close button for the modal -->
+      <div id="modalDetails"></div> <!-- Content of the modal -->
+    </div>
+  </div>
+
+</body>
+
+<!-- Link to JavaScript files -->
+<script src="src/Data.js"></script> <!-- Contains the shop item data -->
+<script src="src/main.js"></script> <!-- Contains JavaScript for the shop functionality -->
+
+</html>
